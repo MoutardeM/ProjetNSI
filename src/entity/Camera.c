@@ -87,14 +87,14 @@ void updateCamera()
     }
 
     if(directions[LEFT]) {
-        position.x -= right.x;
-        position.y -= right.y;
-        position.z -= right.z;        
-    }
-    else if(directions[RIGHT]) {
         position.x += right.x;
         position.y += right.y;
         position.z += right.z;        
+    }
+    else if(directions[RIGHT]) {
+        position.x -= right.x;
+        position.y -= right.y;
+        position.z -= right.z;        
     }
 
     if(directions[TOP]) {
